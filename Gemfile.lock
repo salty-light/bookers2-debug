@@ -262,7 +262,7 @@ DEPENDENCIES
   factory_bot_rails
   faker
   jbuilder (~> 2.7)
-  kaminari
+  kaminari (~> 1.2.1)
   listen (~> 3.3)
   net-smtp
   puma (~> 5.0)
