@@ -63,14 +63,6 @@ ActiveRecord::Schema.define(version: 2023_08_02_060215) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "rails", force: :cascade do |t|
-    t.string "g"
-    t.string "model"
-    t.string "favorite"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "relationships", force: :cascade do |t|
     t.integer "follower_id"
     t.integer "followed_id"
@@ -90,7 +82,6 @@ ActiveRecord::Schema.define(version: 2023_08_02_060215) do
     t.text "introduction"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "title"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
